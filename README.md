@@ -40,8 +40,8 @@ Besides, UniNet can be suited for both unsupervised and supervised settings simu
 
 ### Visualization results
 <div align="center">
-  <img src="figures/loc_results.jpg" width="424" style="display: inline-block;"/>
-  <img src="figures/loc_results2.jpg" width="450" style="display: inline-block;"/>
+  <img src="figures/loc_results.jpg" width="377" style="display: inline-block;"/>
+  <img src="figures/loc_results2.jpg" width="400" style="display: inline-block;"/>
 </div>
 
 

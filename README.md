@@ -10,14 +10,14 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 [PDF Link](https://pangdatangtt.github.io/static/pdfs/UniNet__arXix_.pdf)
 
 ## List of TODOs
-- [x] [📖 Introduction](#introduction)
-- [ ] [🔧 Environments](#environments)
-- [ ] [📊 Data Preparation](#data-preparation)
-- [ ] [🚀 Run Experiments](#run-experiments)
-- [x] [📂 Results](#results)
-- [x] [🔗 Citation](#citation) 
-- [x] [🙏 Acknowledgements](#acknowledgements) 
-- [x] [📜 License](#license)
+- [x] 📖 Introduction
+- [ ] 🔧 Environments
+- [ ] 📊 Data Preparation
+- [ ] 🚀 Run Experiments
+- [x] 📂 Results
+- [x] 🔗 Citation
+- [x] 🙏 Acknowledgements
+- [x] 📜 License
 
 
 ## 📖 Introduction

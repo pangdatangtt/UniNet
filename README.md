@@ -28,19 +28,21 @@ Besides, UniNet can be suited for both unsupervised and supervised settings simu
 
 
 ## 📂 Results
-# Unsupervised anomaly detection
+### Unsupervised anomaly detection
 ![](figures/result1.jpg)
 ![](figures/result2.jpg)
 
-# Supervised anomaly detection
+### Supervised anomaly detection
 ![](figures/result3.jpg)
 
-# Multi-class setting
-![](figures/result1.jpg)
+### Multi-class setting
+![](figures/result4.jpg)
 
-# Visualization results
-![](figures/loc_results.jpg)
-![](figures/loc_results2.jpg)
+### Visualization results
+<div align="center">
+  <img src="figures/loc_results.jpg" width="424" style="display: inline-block;"/>
+  <img src="figures/loc_results2.jpg" width="450" style="display: inline-block;"/>
+</div>
 
 
 ## 🔗 Citation

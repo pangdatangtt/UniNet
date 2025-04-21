@@ -1,6 +1,62 @@
 # [CVPR2025] UniNet
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/anomaly-detection-on-mvtec-ad)](https://paperswithcode.com/sota/anomaly-detection-on-mvtec-ad?p=uninet-a-contrastive-learning-guided-unified) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/anomaly-detection-on-visa)](https://paperswithcode.com/sota/anomaly-detection-on-visa?p=uninet-a-contrastive-learning-guided-unified)
 
-The official implementation of “UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection (CVPR2025)”
+![](figures/UniNet.jpg)
 
-The code will be soon released！！！
+**UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection**
+
+_Shun Wei, Jielin Jiang*, Xiaolong Xu_
+
+[PDF Link](https://pangdatangtt.github.io/static/pdfs/UniNet__arXix_.pdf)
+
+## List of TODOs
+- [x] [📖 Introduction](#introduction)
+- [ ] [🔧 Environments](#environments)
+- [ ] [📊 Data Preparation](#data-preparation)
+- [ ] [🚀 Run Experiments](#run-experiments)
+- [x] [📂 Results](#results)
+- [x] [🔗 Citation](#citation) 
+- [x] [🙏 Acknowledgements](#acknowledgements) 
+- [x] [📜 License](#license)
+
+
+## 📖 Introduction
+This repository will contain source code for UniNet implemented with PyTorch. _**The code will be released in recent weeks!**_
+
+UniNet is a unified framework designed for diverse domains, such as industrial, medical, and video, by addressing the limitations in general ability of existing methods.
+Besides, UniNet can be suited for both unsupervised and supervised settings simultaneously. As a unified framework, UniNet also focuses on multi-class anomaly detection.
+
+
+## 📂 Results
+# Unsupervised anomaly detection
+![](figures/result1.jpg)
+![](figures/result2.jpg)
+
+# Supervised anomaly detection
+![](figures/result3.jpg)
+
+# Multi-class setting
+![](figures/result1.jpg)
+
+# Visualization results
+![](figures/loc_results.jpg)
+![](figures/loc_results2.jpg)
+
+
+## 🔗 Citation
+Please cite our paper if the method and code help and inspire your project:
+
+```bibtex
+@inproceedings{wei2025uninet,
+  title={UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection},
+  author={Wei, Shun and Jiang, Jielin and Xu, Xiaolong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025},
+}
+```
+
+## 🙏 Acknowledgements
+We sincerely appreciate [ReContrast](https://github.com/guojiajeremy/ReContrast) for its concise and excellent approach.
+
+## 📜 License
+The code in this repository is licensed under the MIT license.

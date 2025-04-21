@@ -1,6 +1,7 @@
 # [CVPR2025] UniNet
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/anomaly-detection-on-mvtec-ad)](https://paperswithcode.com/sota/anomaly-detection-on-mvtec-ad?p=uninet-a-contrastive-learning-guided-unified) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/anomaly-detection-on-visa)](https://paperswithcode.com/sota/anomaly-detection-on-visa?p=uninet-a-contrastive-learning-guided-unified)
 
+
 ![](figures/UniNet.jpg)
 
 **UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection**
@@ -8,6 +9,11 @@
 _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 
 [PDF Link](https://pangdatangtt.github.io/static/pdfs/UniNet__arXix_.pdf)
+
+## 🔔 News
+- 04-21-2025: The code will be released in recent days!
+- 02-27-2025: Accepted by CVPR2025!
+
 
 ## List of TODOs
 - [x] 📖 Introduction
@@ -21,7 +27,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 
 
 ## 📖 Introduction
-This repository will contain source code for UniNet implemented with PyTorch. _**The code will be released in recent weeks!**_
+This repository will contain source code for UniNet implemented with PyTorch. _**The code will be released in recent days!**_
 
 UniNet is a unified framework designed for diverse domains, such as industrial, medical, and video, by addressing the limitations in general ability of existing methods.
 Besides, UniNet can be suited for both unsupervised and supervised settings simultaneously. As a unified framework, UniNet also focuses on multi-class anomaly detection.

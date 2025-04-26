@@ -18,7 +18,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 [PDF Link](https://pangdatangtt.github.io/static/pdfs/UniNet__arXix_.pdf)
 
 ## 🔔 News
-- 04-26-2025: The code has been released!
+- 04-26-2025: The code has been released (To be improved)!
 - 04-21-2025: The code will be released in recent days!
 - 02-27-2025: Accepted by CVPR2025!
 

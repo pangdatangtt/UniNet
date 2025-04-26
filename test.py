@@ -78,40 +78,6 @@ def test(c, suffix='BEST_P_PRO'):
             mice, miou = evaluation_polypseg(c, model, test_dataloader, dataset_info[-1])
             return mice, miou
 
-    # gt_list_px = []
-    # gt_list_sp = []
-    # output_list = [list() for _ in range(6)]
-    # weights_cnt = 0
-    # with torch.no_grad():
-    #     for idx, (sample, label, gt) in enumerate(test_dataloader):
-    #
-    #         gt_list_sp.extend(t2np(label))
-    #         gt_list_px.extend(t2np(gt))
-    #         weights_cnt += 1
-    #
-    #         img = sample.to(device) if dataset_name != "MVTec 3D-AD" else sample[0].to(device)
-    #         t_tf, de_features = model(img)
-    #
-    #         for l, (t, s) in enumerate(zip(t_tf, de_features)):
-    #             output = 1 - F.cosine_similarity(t, s)  # B*64*64
-    #             output_list[l].append(output)
-    #
-    #     # postprocess
-    #     anomaly_score, anomaly_map = weighted_decision_mechanism(weights_cnt, output_list, c.alpha, c.beta)
-    #     anomaly_score = gaussian_filter(anomaly_score, sigma=4)
-    #
-    #     # anomaly_score_add = gaussian_filter(anomaly_score_add, sigma=4)
-    #
-    #     gt_label = np.asarray(gt_list_sp, dtype=np.bool_)
-    #     gt_mask = np.squeeze(np.asarray(gt_list_px, dtype=np.bool_), axis=1)
-    #
-    #     auroc_px = round(roc_auc_score(gt_mask.flatten(), anomaly_map.flatten()) * 100, 2)
-    #     auroc_sp = round(roc_auc_score(gt_label, anomaly_score) * 100, 2)
-    #
-    #     pro = eval_seg_pro(gt_mask, anomaly_map)
-
-        # print("auroc_sp:{}, auroc_px:{}, aupro:{}".format(auroc_sp, auroc_px, round(pro, 2)))
-
 
 if __name__ == "__main__":
     from utils import setup_seed, get_logger

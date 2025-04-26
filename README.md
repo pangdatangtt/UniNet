@@ -18,6 +18,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 [PDF Link](https://pangdatangtt.github.io/static/pdfs/UniNet__arXix_.pdf)
 
 ## 🔔 News
+- 04-26-2025：The code has been released!
 - 04-21-2025: The code will be released in recent days!
 - 02-27-2025: Accepted by CVPR2025!
 
@@ -65,7 +66,7 @@ Please cite our paper if the method and code help and inspire your project:
 @inproceedings{wei2025uninet,
   title={UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection},
   author={Wei, Shun and Jiang, Jielin and Xu, Xiaolong},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2025},
 }
 ```

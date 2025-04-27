@@ -19,16 +19,16 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 
 ## 🔔 News
 - 04-27-2025: The weight files have been uploaded.
-- 04-26-2025: The code has been released (To be improved)!
-- 04-21-2025: The code will be released in recent days!
-- 02-27-2025: Accepted by CVPR2025!
+- 04-26-2025: The code has been released (To be improved) !
+- 04-21-2025: The code will be released in recent days !
+- 02-27-2025: Accepted by CVPR2025 !
 
 
 ## List of TODOs
 - [x] 📖 Introduction
 - [x] 🔧 Environments
-- [x] 📊 Data Preparation
-- [ ] 🚀 Run Experiments
+- [x] 📊 Data Preparation (under improvement)
+- [x] 🚀 Run Experiments
 - [x] 📂 Results
 - [x] 🔗 Citation
 - [x] 🙏 Acknowledgements
@@ -159,6 +159,51 @@ Then, it would be like:
         |-- NORMAL
     |-- original
 ```
+
+## 🚀 Run Experiments
+### Unsupervised AD
+Run the following command for industrial domain, such as MVTec AD dataset:
+```
+python main.py --domain industrial --setting oc --dataset MVTec AD
+```
+
+Run the following command for medical domain, such as APTOS dataset:
+```
+python main.py --domain medical --setting oc --dataset APTOS
+```
+
+Alternatively, you can train and test all medical datasets at once using the following command:
+```
+python main.py --domain medical --setting oc --dataset APTOS --train_and_test_all
+```
+
+Run the following command for video domain:
+```
+python main.py --domain video --setting oc --dataset Ped2
+```
+
+Run the following command for multiclass anomaly detection, such as VisA dataset:
+```
+python main.py --domain industrial --setting mc --dataset VisA
+```
+
+### Supervised AD
+Run the following command for medical polyp segmentation, sucha as Kvasir-SEG dataset:
+```
+python main.py --domain medical --setting oc --dataset Kvasir-SEG
+```
+
+Alternatively, you can train and test all medical datasets at once using the following command:
+```
+python main.py --domain medical --setting oc --dataset Kvasir-SEG --train_and_test_all
+```
+
+Run the following command for industrial domain:
+```
+python main.py --domain industrial --setting oc --dataset VAD
+```
+
+
 
 ## 📂 Results
 ### Unsupervised anomaly detection

@@ -71,7 +71,6 @@ def loading_dataset(c, dataset_name):
         elif dataset_name == 'MVTec AD':
             dataset_name = 'mvtec'
             class_list = mvtec_list
-            lr = {"lr_s": 2e-3, "lr_t": 5e-5}
         elif dataset_name == 'BTAD':
             dataset_name = 'btad'
             class_list = btad_list

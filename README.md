@@ -182,7 +182,7 @@ Run the following command for video domain:
 python main.py --domain video --setting oc --dataset Ped2
 ```
 
-Run the following command for multiclass anomaly detection, such as VisA dataset:
+Run the following command for _**multiclass**_ anomaly detection, such as VisA dataset:
 ```
 python main.py --domain industrial --setting mc --dataset VisA
 ```

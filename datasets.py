@@ -68,7 +68,7 @@ def loading_dataset(c, dataset_name):
         if dataset_name == "VisA":
             dataset_name = "visa"
             class_list = visa_list
-            # lr = {"lr_s": 5e-3, "lr_t": 1e-6}
+            lr = {"lr_s": 5e-3, "lr_t": 1e-6}
         elif dataset_name == 'MVTec AD':
             dataset_name = 'mvtec'
             class_list = mvtec_list

@@ -28,7 +28,7 @@ class UniNet(nn.Module):
         if self.dfs is not None:
             selected_features = self.dfs(a, b, learnable=True, conv=False)
         else:
-            from ..DFS import domain_related_feature_selection
+            from .DFS import domain_related_feature_selection
             selected_features = domain_related_feature_selection(a, b)
         return selected_features
 

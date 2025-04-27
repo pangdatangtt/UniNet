@@ -22,21 +22,21 @@ class UniNet(nn.Module):
 
         return self
 
-    def feature_selection(self, b, a):
+    def feature_selection(self, b, a, max=True):
         if self.dfs is not None:
-            selected_features = self.dfs(a, b, learnable=True, conv=False)
+            selected_features = self.dfs(a, b, learnable=True, conv=False, max=max)
         else:
-            from ..DFS import domain_related_feature_selection
+            from .DFS import domain_related_feature_selection
             selected_features = domain_related_feature_selection(a, b)
         return selected_features
 
-    def loss_computation(self, b, a, pred_list, margin=1, mask=None):
-        loss = losses(b, a, self.T, margin, mask=None) + \
+    def loss_computation(self, b, a, pred_list, margin=1, mask=None, stop_gradient=False):
+        loss = losses(b, a, self.T, margin, mask=None, stop_gradient=stop_gradient) + \
                structure_loss(pred_list[0][0], mask) + structure_loss(pred_list[0][-1], mask)
 
         return loss
 
-    def forward(self, x, mask=None):
+    def forward(self, x, mask=None, max=True, stop_gradient=False):
         Sou_Tar_features, bnins = self.t(x)
         bnsout = self.bn(bnins)
         stu_features, stu_pred = self.s(bnsout, [bnins[-1], bnins[-2]])
@@ -53,9 +53,9 @@ class UniNet(nn.Module):
         # stu_pred3 = stu_pred3.chunk(dim=0, chunks=2)
 
         if self.type == 'train':
-            stu_features_ = self.feature_selection(Sou_Tar_features, stu_features)
-            loss = self.loss_computation(Sou_Tar_features, stu_features_, [stu_pred1], mask=mask)
-
+            stu_features_ = self.feature_selection(Sou_Tar_features, stu_features, max)
+            loss = self.loss_computation(Sou_Tar_features, stu_features_, [stu_pred1], mask=mask, 
+                                         stop_gradient=stop_gradient)
             return loss
         else:
             return Sou_Tar_features, stu_features, [stu_pred1]

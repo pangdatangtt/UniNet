@@ -204,7 +204,7 @@ python main.py --domain industrial --setting oc --dataset VAD
 ```
 
 ### 3. Testing
-After saving the weight file we upload, you can test the model using the following command:
+With training on your own or saving the weight file we upload, you can test the model using the following command:
 ```
 python main.py --domain industrial --setting oc --dataset MVTec AD --load_ckpts
 ```

@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from ..Loss import losses, structure_loss
+from .Loss import losses, structure_loss
 import torch.nn.functional as F
 
 

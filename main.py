@@ -38,7 +38,7 @@ def parsing_args():
                         help="for medical domains.")
     parser.add_argument("--is_saved", action='store_true', default=True, help="whether to save model weights.")
     parser.add_argument('--save_dir', type=str, default='./saved_results')
-    parser.add_argument('--load_ckpts', action='store_true', default=True, help="loading ckpts for testing")
+    parser.add_argument('--load_ckpts', action='store_true', default=False, help="loading ckpts for testing")
 
     args = parser.parse_args()
 

@@ -12,7 +12,7 @@ import torch.backends.cudnn as cudnn
 from eval import evaluation_vad
 from torch.nn import functional as F
 from utils import setup_seed, count_parameters, save_weights, to_device, get_logger
-from UniNet_lib.model import UniNet
+from UniNet_lib.model_classfication import UniNet
 from UniNet_lib.DFS import DomainRelated_Feature_Selection
 
 

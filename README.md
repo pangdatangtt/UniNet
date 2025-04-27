@@ -203,7 +203,14 @@ Run the following command for industrial domain:
 python main.py --domain industrial --setting oc --dataset VAD
 ```
 
-
+### Testing
+After saving the weight file we upload, you can test the model using the following command:
+```
+python main.py --domain industrial --setting oc --dataset MVTec AD --load_ckpts
+```
+```
+python main.py --domain industrial --setting mc --dataset VisA --load_ckpts
+```
 
 ## 📂 Results
 ### Unsupervised anomaly detection

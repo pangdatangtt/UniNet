@@ -243,7 +243,7 @@ Please cite our paper if the method and code help and inspire your project:
 ```
 
 ## 🙏 Acknowledgements
-We sincerely appreciate [ReContrast](https://github.com/guojiajeremy/ReContrast) for its concise and excellent approach.
+We sincerely appreciate [ReContrast](https://github.com/guojiajeremy/ReContrast) for its clear and excellent approach.
 
 ## 📜 License
 The code in this repository is licensed under the MIT license.

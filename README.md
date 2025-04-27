@@ -18,6 +18,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 [PDF Link](https://pangdatangtt.github.io/static/pdfs/UniNet__arXix_.pdf)
 
 ## 🔔 News
+- 04-27-2025: The weight files have been uploaded to Baidu Cloud.
 - 04-26-2025: The code has been released (To be improved)!
 - 04-21-2025: The code will be released in recent days!
 - 02-27-2025: Accepted by CVPR2025!
@@ -35,7 +36,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 
 
 ## 📖 Introduction
-This repository will contain source code for UniNet implemented with PyTorch. _**The code will be released in recent days!**_
+This repository will contain source code for UniNet implemented with PyTorch.
 
 UniNet is a unified framework designed for diverse domains, such as industrial, medical, and video, by addressing the limitations in general ability of existing methods.
 Besides, UniNet can be suited for both unsupervised and supervised settings simultaneously. As a unified framework, UniNet also focuses on multi-class anomaly detection.

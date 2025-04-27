@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from ..Loss import losses
+from .Loss import losses
 import numpy as np
 
 bce_loss = torch.nn.BCEWithLogitsLoss()

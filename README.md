@@ -27,7 +27,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 ## List of TODOs
 - [x] 📖 Introduction
 - [x] 🔧 Environments
-- [ ] 📊 Data Preparation
+- [x] 📊 Data Preparation
 - [ ] 🚀 Run Experiments
 - [x] 📂 Results
 - [x] 🔗 Citation
@@ -100,7 +100,7 @@ Creat a new directory ```../APTOS```. Unzip the file to ```../APTOS/original/```
         |-- train.csv
 ```
 
-Use this [code](https://github.com/guojiajeremy/ReContrast/blob/master/prepare_data/prepare_aptos.py) and run the following command to preprocess the data to ```../APTOS/```.
+Run the following command to preprocess the data to ```../APTOS/```.
 
 ```
 python ./prepare_data/prepare_aptos.py --data-folder ../APTOS/original --save-folder ../APTOS

@@ -59,7 +59,7 @@ The public datasets employed in the paper are listed below.
 - Video domain: [Ped2](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html).
 
 
-### MVTec AD
+### 1. MVTec AD
 ```
 |-- mvtec
     |-- bottle
@@ -72,7 +72,7 @@ The public datasets employed in the paper are listed below.
         |-- train
     |-- ...
 ```
-### VisA
+### 2. VisA
 Unzip the file to ```../VisA/.``` Preprocess the dataset to ```../VisA_pytorch/``` in 1-class mode by their official splitting [code](https://github.com/amazon-science/spot-diff). Alternately, 
 you can also preprocess the dataset using this [code](https://github.com/guojiajeremy/ReContrast/blob/master/prepare_data/prepare_visa.py) from ReContrast.
 ```
@@ -89,7 +89,7 @@ you can also preprocess the dataset using this [code](https://github.com/guojiaj
         |-- ....
 ```
 
-### APTOS
+### 3. APTOS
 Creat a new directory ```../APTOS```. Unzip the file to ```../APTOS/original/```. Now, the directory would be like:
 ```
 |-- APTOS
@@ -117,7 +117,7 @@ Then, it woule be like:
     |-- original
 ```
 
-### OCT2017
+### 4. OCT2017
 Creat a new directory ```../OCT2017```. Unzip the file, and move everything in ZhangLabData/CellData/OCT to ```../OCT2017/```. The directory should be like:
 ```
 |-- OCT2017
@@ -133,7 +133,7 @@ Creat a new directory ```../OCT2017```. Unzip the file, and move everything in Z
         |-- NORMAL
 ```
 
-### ISIC2018
+### 5. ISIC2018
 Creat a new directory ```../ISIC2018```. After downloading "Training Data","Training Ground Truth", "Validation Data", and "Validation Ground Truth" of Task 3, 
 please unzip them to ```../ISIC2018/original/```. Now, the directory would be like:
 ```
@@ -161,7 +161,7 @@ Then, it would be like:
 ```
 
 ## 🚀 Run Experiments
-### Unsupervised AD
+### 1. Unsupervised AD
 Run the following command for industrial domain, such as MVTec AD dataset:
 ```
 python main.py --domain industrial --setting oc --dataset MVTec AD
@@ -187,7 +187,7 @@ Run the following command for _**multiclass**_ anomaly detection, such as VisA d
 python main.py --domain industrial --setting mc --dataset VisA
 ```
 
-### Supervised AD
+### 2. Supervised AD
 Run the following command for medical polyp segmentation, sucha as Kvasir-SEG dataset:
 ```
 python main.py --domain medical --setting oc --dataset Kvasir-SEG
@@ -203,7 +203,7 @@ Run the following command for industrial domain:
 python main.py --domain industrial --setting oc --dataset VAD
 ```
 
-### Testing
+### 3. Testing
 After saving the weight file we upload, you can test the model using the following command:
 ```
 python main.py --domain industrial --setting oc --dataset MVTec AD --load_ckpts
@@ -213,17 +213,17 @@ python main.py --domain industrial --setting mc --dataset VisA --load_ckpts
 ```
 
 ## 📂 Results
-### Unsupervised anomaly detection
+### 1. Unsupervised anomaly detection
 ![](figures/result1.jpg)
 ![](figures/result2.jpg)
 
-### Supervised anomaly detection
+### 2. Supervised anomaly detection
 ![](figures/result3.jpg)
 
-### Multi-class setting
+### 3. Multi-class setting
 ![](figures/result4.jpg)
 
-### Visualization results
+### 4. Visualization results
 <div align="center">
   <img src="figures/loc_results.jpg" width="377" style="display: inline-block;"/>
   <img src="figures/loc_results2.jpg" width="400" style="display: inline-block;"/>

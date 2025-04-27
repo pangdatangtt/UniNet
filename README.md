@@ -53,13 +53,13 @@ Same GPU and package version are recommended.
 
 ## 📊 Data Preparation
 The public datasets employed in the paper are listed below.
-- Industrial domains: [MVTec AD](https://www.mvtec.com/company/research/datasets/mvtec-ad/), [VisA](https://github.com/amazon-science/spot-diff/), [BTAD](http://avires.dimi.uniud.it/papers/btad/btad.zip),
+- Industrial domain: [MVTec AD](https://www.mvtec.com/company/research/datasets/mvtec-ad/), [VisA](https://github.com/amazon-science/spot-diff/), [BTAD](http://avires.dimi.uniud.it/papers/btad/btad.zip),
 [MVTec 3D-AD](https://www.mvtec.com/company/research/datasets/mvtec-3d-ad/downloads), [VAD](https://github.com/abc-125/vad?tab=readme-ov-file).
-- Medical domains: [OCT2017](https://data.mendeley.com/datasets/rscbjbr9sj/3), [APTOS](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data), [ISIC2018](https://challenge.isic-archive.com/data/#2018), [Kvasir](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579), [CVC-ColonDB](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579), [CVC-ClinicDB](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579).
-- Video domains: [Ped2](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html).
+- Medical domain: [OCT2017](https://data.mendeley.com/datasets/rscbjbr9sj/3), [APTOS](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data), [ISIC2018](https://challenge.isic-archive.com/data/#2018), [Kvasir](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579), [CVC-ColonDB](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579), [CVC-ClinicDB](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579).
+- Video domain: [Ped2](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html).
 
 
-MVTec AD
+### MVTec AD
 ```
 |-- mvtec
     |-- bottle
@@ -72,7 +72,9 @@ MVTec AD
         |-- train
     |-- ...
 ```
-VisA
+### VisA
+Unzip the file to ```../VisA/.``` Preprocess the dataset to ```../VisA_pytorch/``` in 1-class mode by their official splitting [code](https://github.com/amazon-science/spot-diff). Alternately, 
+you can also preprocess the dataset using this [code](https://github.com/guojiajeremy/ReContrast/blob/master/prepare_data/prepare_visa.py) from ReContrast.
 ```
 |-- VisA_pytorch
     |-- 1cls
@@ -85,6 +87,77 @@ VisA
                     |-- good
         |-- capsules
         |-- ....
+```
+
+### APTOS
+Creat a new directory ```../APTOS```. Unzip the file to ```../APTOS/original/```. Now, the directory would be like:
+```
+|-- APTOS
+    |-- original
+        |-- test_images
+        |-- train_images
+        |-- test.csv
+        |-- train.csv
+```
+
+Use this [code](https://github.com/guojiajeremy/ReContrast/blob/master/prepare_data/prepare_aptos.py) and run the following command to preprocess the data to ```../APTOS/```.
+
+```
+python ./prepare_data/prepare_aptos.py --data-folder ../APTOS/original --save-folder ../APTOS
+```
+
+Then, it woule be like:
+```
+|-- APTOS
+    |-- test
+        |-- NORMAL
+        |-- ABNORMAL
+    |-- train
+        |-- NORMAL
+    |-- original
+```
+
+### OCT2017
+Creat a new directory ```../OCT2017```. Unzip the file, and move everything in ZhangLabData/CellData/OCT to ```../OCT2017/```. The directory should be like:
+```
+|-- OCT2017
+    |-- test
+        |-- CNV
+        |-- DME
+        |-- DRUSEN
+        |-- NORMAL
+    |-- train
+        |-- CNV
+        |-- DME
+        |-- DRUSEN
+        |-- NORMAL
+```
+
+### ISIC2018
+Creat a new directory ```../ISIC2018```. After downloading "Training Data","Training Ground Truth", "Validation Data", and "Validation Ground Truth" of Task 3, 
+please unzip them to ```../ISIC2018/original/```. Now, the directory would be like:
+```
+|-- ISIC2018
+    |-- original
+        |-- ISIC2018_Task3_Training_GroundTruth
+        |-- ISIC2018_Task3_Training_Input
+        |-- ISIC2018_Task3_Validation_GroundTruth
+        |-- ISIC2018_Task3_Validation_Input
+```
+
+Run the following command to preprocess the data to ```../ISIC2018/```.
+```
+python ./prepare_data/prepare_isic2018.py --data-folder ../ISIC2018/original --save-folder ../ISIC2018
+```
+Then, it would be like:
+```
+|-- ISIC2018
+    |-- test
+        |-- NORMAL
+        |-- ABNORMAL
+    |-- train
+        |-- NORMAL
+    |-- original
 ```
 
 ## 📂 Results

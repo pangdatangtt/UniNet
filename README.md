@@ -26,7 +26,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 
 ## List of TODOs
 - [x] 📖 Introduction
-- [ ] 🔧 Environments
+- [x] 🔧 Environments
 - [ ] 📊 Data Preparation
 - [ ] 🚀 Run Experiments
 - [x] 📂 Results
@@ -41,6 +41,51 @@ This repository will contain source code for UniNet implemented with PyTorch.
 UniNet is a unified framework designed for diverse domains, such as industrial, medical, and video, by addressing the limitations in general ability of existing methods.
 Besides, UniNet can be suited for both unsupervised and supervised settings simultaneously. As a unified framework, UniNet also focuses on multi-class anomaly detection.
 
+## 🔧 Environments
+Create a new conda environment and install required packages.
+```
+conda create -n uninet_env python=3.9.7
+conda activate uninet_env
+pip install -r requirements.txt
+```
+Experiments are conducted on NVIDIA GeForce RTX 3090.
+Same GPU and package version are recommended. 
+
+## 📊 Data Preparation
+The public datasets employed in the paper are listed below.
+- Industrial domains: [MVTec AD](https://www.mvtec.com/company/research/datasets/mvtec-ad/), [VisA](https://github.com/amazon-science/spot-diff/), [BTAD](http://avires.dimi.uniud.it/papers/btad/btad.zip),
+[MVTec 3D-AD](https://www.mvtec.com/company/research/datasets/mvtec-3d-ad/downloads), [VAD](https://github.com/abc-125/vad?tab=readme-ov-file).
+- Medical domains: [OCT2017](https://data.mendeley.com/datasets/rscbjbr9sj/3), [APTOS](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data), [ISIC2018](https://challenge.isic-archive.com/data/#2018), [Kvasir](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579), [CVC-ColonDB](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579), [CVC-ClinicDB](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579).
+- Video domains: [Ped2](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html).
+
+
+MVTec AD
+```
+|-- mvtec
+    |-- bottle
+        |-- ground_truth
+        |-- test
+        |-- train
+    |-- cable
+        |-- ground_truth
+        |-- test
+        |-- train
+    |-- ...
+```
+VisA
+```
+|-- VisA_pytorch
+    |-- 1cls
+        |-- candle
+            |-- ground_truth
+            |-- test
+                    |-- good
+                    |-- bad
+            |-- train
+                    |-- good
+        |-- capsules
+        |-- ....
+```
 
 ## 📂 Results
 ### Unsupervised anomaly detection

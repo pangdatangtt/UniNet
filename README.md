@@ -164,7 +164,7 @@ Then, it would be like:
 ### 1. Unsupervised AD
 Run the following command for industrial domain, such as MVTec AD dataset:
 ```
-python main.py --setting oc --dataset MVTec AD
+python main.py --setting oc --dataset "MVTec AD"
 ```
 
 Run the following command for medical domain, such as APTOS dataset:
@@ -190,12 +190,12 @@ python main.py --setting mc --dataset VisA
 ### 2. Supervised AD
 Run the following command for medical polyp segmentation, sucha as Kvasir-SEG dataset:
 ```
-python main.py --dataset Kvasir-SEG
+python main.py --dataset "Kvasir-SEG"
 ```
 
 Similarly, you can also train and test all medical datasets at once using the following command:
 ```
-python main.py --dataset Kvasir-SEG --train_and_test_all
+python main.py --dataset "Kvasir-SEG" --train_and_test_all
 ```
 
 Run the following command for industrial domain:
@@ -206,7 +206,7 @@ python main.py --dataset VAD
 ### 3. Testing
 With training on your own or saving the weight file we upload, you can test the model using the following command:
 ```
-python main.py --setting oc --dataset MVTec AD --load_ckpts
+python main.py --setting oc --dataset "MVTec AD" --load_ckpts
 ```
 ```
 python main.py --setting mc --dataset VisA --load_ckpts

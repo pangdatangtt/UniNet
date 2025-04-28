@@ -1,1 +1,21 @@
+testing on APTOS dataset
+cuda
+Loading weights from ./ckpts\APTOS\BEST_I_ROC.pth
+using UniNet model
 
+testing on ISIC2018 dataset
+cuda
+Loading weights from ./ckpts\ISIC2018\BEST_I_ROC.pth
+using UniNet model
+
+testing on OCT2017 dataset
+cuda
+Loading weights from ./ckpts\OCT2017\BEST_I_ROC.pth
+using UniNet model
+
+| object   |   image_auroc |    acc |     f1 |
+|:---------|--------------:|-------:|-------:|
+| APTOS    |         100   | 100    | 100    |
+| ISIC2018 |          99.4 |  97.9  |  97.2  |
+| OCT2017  |         100   |  99.9  |  99.9  |
+| mean     |          99.8 |  99.28 |  99.05 |

@@ -108,3 +108,27 @@ fps: 19.4173426148834 307
 | wood       |         99.9  |         99.1  |         98.2  |
 | mean       |         99.89 |         98.82 |         96.06 |
 
+testing on MVTec AD dataset (multiclass)
+cuda
+a total of 15 classes
+Loading weights from ./ckpts\MVTec AD\multiclass\BEST_I_ROC.pth
+using UniNet model
+
+| object     |   image_auroc |    acc |     f1 |
+|:-----------|--------------:|-------:|-------:|
+| carpet     |         98.6  |  99.6  |  97.8  |
+| bottle     |        100    | 100    | 100    |
+| hazelnut   |        100    | 100    |  99.3  |
+| leather    |        100    | 100    |  99.5  |
+| cable      |         97.6  |  98.8  |  94.5  |
+| capsule    |        100    | 100    | 100    |
+| grid       |         97.8  |  99.2  |  95    |
+| pill       |         98.4  |  99.7  |  99.3  |
+| transistor |         99.2  |  99.2  |  97.5  |
+| metal_nut  |        100    | 100    | 100    |
+| screw      |        100    | 100    | 100    |
+| toothbrush |        100    | 100    | 100    |
+| zipper     |         99    |  99.7  |  97.9  |
+| tile       |         96.9  |  98.9  |  94.7  |
+| wood       |        100    |  99.9  |  98.4  |
+| mean       |         99.17 |  99.66 |  98.26 |

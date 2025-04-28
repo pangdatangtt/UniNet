@@ -1,1 +1,21 @@
+testing on VisA dataset (multiclass)
+cuda
+a total of 12 classes
+Loading weights from ./ckpts\VisA\multiclass\BEST_I_ROC.pth
+using UniNet model
 
+| object     |   image_auroc |    acc |     f1 |
+|:-----------|--------------:|-------:|-------:|
+| candle     |        100    | 100    | 100    |
+| capsules   |         99.8  |  99.9  |  98.5  |
+| cashew     |         95.7  |  97.7  |  94.3  |
+| chewinggum |        100    | 100    | 100    |
+| fryum      |         98.7  |  99.4  |  97.4  |
+| macaroni1  |        100    | 100    | 100    |
+| macaroni2  |        100    | 100    | 100    |
+| pcb1       |        100    | 100    | 100    |
+| pcb2       |         98.2  |  98.5  |  95.8  |
+| pcb3       |         98.4  |  98.6  |  95.3  |
+| pcb4       |        100    | 100    | 100    |
+| pipe_fryum |         99    |  99.5  |  98    |
+| mean       |         99.15 |  99.47 |  98.29 |

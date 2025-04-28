@@ -82,7 +82,11 @@ def train_mc(c):
                     best = np.mean(auroc_sp_list)
                     save_weights(modules_list, ckpt_path, 'BEST_I_ROC') if c.is_saved else None
                 model.train_or_eval(type='train')
-
+                 if dataset_name == 'MVTec AD':
+                    model.t.t_t.eval()
+                    model.s.eval()
+                    model.bn.eval()
+                    model.dfs.eval()
             it += 1
             if it == total_iters:
                 break

@@ -21,10 +21,7 @@ def train(c):
     print(device)
 
     dataset_name = c.dataset
-    if c._class_ in [dataset_name]:
-        ckpt_path = os.path.join("./ckpts", dataset_name)
-    else:
-        ckpt_path = os.path.join("./ckpts", dataset_name, f"{c._class_}")
+    ckpt_path = os.path.join("./ckpts", dataset_name)
 
     # loading dataset
     train_dataloader, test_dataloader = loading_dataset(c, dataset_name)
@@ -41,7 +38,7 @@ def train(c):
     params = list(student.parameters()) + list(bn.parameters()) + list(DFS.parameters())
     optimizer = torch.optim.AdamW(params, lr=c.lr_s, betas=(0.9, 0.999),
                                   weight_decay=1e-5)
-    optimizer1 = torch.optim.AdamW(list(Target_teacher.parameters()), lr=1e-5,
+    optimizer1 = torch.optim.AdamW(list(Target_teacher.parameters()), lr=c.lr_t,
                                    betas=(0.9, 0.999), weight_decay=1e-5)
     model = UniNet(c, Source_teacher, Target_teacher, bn, student, DFS=DFS)
 
@@ -54,7 +51,7 @@ def train(c):
         n = 0
         for sample in train_dataloader:
             img, label = sample[0].to(device), sample[1].to(device)
-            loss = model(img, label)
+            loss = model(img, label, stop_gradient=True, max=False)
             optimizer.zero_grad()
             optimizer1.zero_grad()
             loss.backward()

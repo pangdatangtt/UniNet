@@ -19,7 +19,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 
 ## 🔔 News
 - 04-27-2025: The weight files have been uploaded.
-- 04-26-2025: The code has been released (To be improved) !
+- 04-26-2025: The code has been released !
 - 04-21-2025: The code will be released in recent days !
 - 02-27-2025: Accepted by CVPR2025 !
 
@@ -27,7 +27,7 @@ _Shun Wei, Jielin Jiang*, Xiaolong Xu_
 ## List of TODOs
 - [x] 📖 Introduction
 - [x] 🔧 Environments
-- [x] 📊 Data Preparation (under improvement)
+- [x] 📊 Data Preparation
 - [x] 🚀 Run Experiments
 - [x] 📂 Results
 - [x] 🔗 Citation
@@ -164,53 +164,57 @@ Then, it would be like:
 ### 1. Unsupervised AD
 Run the following command for industrial domain, such as MVTec AD dataset:
 ```
-python main.py --domain industrial --setting oc --dataset MVTec AD
+python main.py --setting oc --dataset MVTec AD
 ```
 
 Run the following command for medical domain, such as APTOS dataset:
 ```
-python main.py --domain medical --setting oc --dataset APTOS
+python main.py --dataset APTOS
 ```
 
 Alternatively, you can train and test all medical datasets at once using the following command:
 ```
-python main.py --domain medical --setting oc --dataset APTOS --train_and_test_all
+python main.py --dataset APTOS --train_and_test_all
 ```
 
 Run the following command for video domain:
 ```
-python main.py --domain video --setting oc --dataset Ped2
+python main.py --dataset Ped2
 ```
 
 Run the following command for _**multiclass**_ anomaly detection, such as VisA dataset:
 ```
-python main.py --domain industrial --setting mc --dataset VisA
+python main.py --setting mc --dataset VisA
 ```
 
 ### 2. Supervised AD
 Run the following command for medical polyp segmentation, sucha as Kvasir-SEG dataset:
 ```
-python main.py --domain medical --setting oc --dataset Kvasir-SEG
+python main.py --dataset Kvasir-SEG
 ```
 
-Alternatively, you can train and test all medical datasets at once using the following command:
+Similarly, you can also train and test all medical datasets at once using the following command:
 ```
-python main.py --domain medical --setting oc --dataset Kvasir-SEG --train_and_test_all
+python main.py --dataset Kvasir-SEG --train_and_test_all
 ```
 
 Run the following command for industrial domain:
 ```
-python main.py --domain industrial --setting oc --dataset VAD
+python main.py --dataset VAD
 ```
 
 ### 3. Testing
 With training on your own or saving the weight file we upload, you can test the model using the following command:
 ```
-python main.py --domain industrial --setting oc --dataset MVTec AD --load_ckpts
+python main.py --setting oc --dataset MVTec AD --load_ckpts
 ```
 ```
-python main.py --domain industrial --setting mc --dataset VisA --load_ckpts
+python main.py --setting mc --dataset VisA --load_ckpts
 ```
+```
+python main.py --dataset APTOS --load_ckpts
+```
+For unsupervised industrial AD, the ''--setting'' must be considered.
 
 ## 📂 Results
 ### 1. Unsupervised anomaly detection

@@ -1,1 +1,25 @@
+testing on BTAD dataset (separate-class)
+testing class:01
+cuda
+Loading weights from ./ckpts\BTAD\01\BEST_P_PRO.pth
+using UniNet model
+fps: 8.23467140550868 70
 
+testing class:02
+cuda
+Loading weights from ./ckpts\BTAD\02\BEST_P_PRO.pth
+using UniNet model
+fps: 16.818451039516486 230
+
+testing class:03
+cuda
+Loading weights from ./ckpts\BTAD\03\BEST_P_PRO.pth
+using UniNet model
+fps: 16.644559689614617 441
+
+| object   |   image_auroc |   pixel_auroc |   pixel_aupro |
+|:---------|--------------:|--------------:|--------------:|
+| 01       |        100    |         97.3  |         82    |
+| 02       |         93.8  |         96.1  |         60.7  |
+| 03       |        100    |         99.6  |         97.8  |
+| mean     |         97.93 |         97.67 |         80.17 |

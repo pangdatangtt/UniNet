@@ -18,8 +18,12 @@ warnings.filterwarnings("ignore", category=RuntimeWarning, module="importlib._bo
 
 BTAD_PATH = os.path.abspath(os.path.join("D:\ws/btad"))
 
-UnsupervisedAD = ['MVTec AD', 'BTAD', 'MVTec 3D-AD', "VisA", "APTOS", "ISIC2018", "OCT2017", 'ped2']
-SupervisedAD = ["Kvasir-SEG", "CVC-ClinicDB", "CVC-ColonDB", "VAD"]
+industrial = ['MVTec AD', 'BTAD', 'MVTec 3D-AD', "VisA", "VAD"]
+medical = ["APTOS", "ISIC2018", "OCT2017", "Kvasir-SEG", "CVC-ClinicDB", "CVC-ColonDB"]
+video = ['Ped2',]
+
+unsupervised = ['MVTec AD', 'BTAD', 'MVTec 3D-AD', "VisA", "APTOS", "ISIC2018", "OCT2017", 'Ped2']
+supervised = ["Kvasir-SEG", "CVC-ClinicDB", "CVC-ColonDB", "VAD"]
 
 mvtec_list = ['carpet', 'bottle', 'hazelnut', 'leather', 'cable', 'capsule', 'grid', 'pill',
               'transistor', 'metal_nut', 'screw', 'toothbrush', 'zipper', 'tile', 'wood']

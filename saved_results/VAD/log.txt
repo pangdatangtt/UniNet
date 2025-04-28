@@ -1,1 +1,7 @@
-
+testing on VAD dataset
+cuda
+Loading weights from ./ckpts\VAD\BEST_I_ROC.pth
+using UniNet_cls model
+| object   |   image_auroc |   acc |   f1 |
+|:---------|--------------:|------:|-----:|
+| mean     |          99.6 |  96.7 | 96.7 |

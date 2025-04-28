@@ -118,7 +118,7 @@ def loading_dataset(c, dataset_name):
                                                        drop_last=False)
         test_dataloader = torch.utils.data.DataLoader(test_data, batch_size=1, shuffle=False)
 
-    elif dataset_name in ["ped2"]:
+    elif dataset_name in ["Ped2"]:
         h, w = c.image_size, c.image_size
         time_step = 0
         train_folder = 'video/ped2/training/frames'
@@ -157,7 +157,7 @@ def loading_dataset(c, dataset_name):
 
         return train_dataloader, test_dataloader, num1
 
-    elif dataset_name in ['vad']:
+    elif dataset_name in ['VAD']:
         train_data = VADDataset(c, is_train=True)
         test_data = VADDataset(c, is_train=False)
         train_dataloader = torch.utils.data.DataLoader(train_data, batch_size=c.batch_size, shuffle=True,

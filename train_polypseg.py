@@ -61,7 +61,7 @@ def train_polyp(c):
                 images = (images).cuda()
                 gts = (gts).cuda()
 
-                loss = model(images, gts)
+                loss = model(images, gts, stop_gradient=False)
                 optimizer.zero_grad()
                 optimizer1.zero_grad()
                 loss.backward()

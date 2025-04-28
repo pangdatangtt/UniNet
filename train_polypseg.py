@@ -61,6 +61,7 @@ def train_polyp(c):
                 images = (images).cuda()
                 gts = (gts).cuda()
 
+                # set stop_gradient=True if the performance is not good
                 loss = model(images, gts, stop_gradient=False)
                 optimizer.zero_grad()
                 optimizer1.zero_grad()

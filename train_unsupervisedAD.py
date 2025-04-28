@@ -69,20 +69,20 @@ def train(c):
             loss_list.append(loss.item())
 
             # ------------------------------------eval medical AD-------------------------------------------
-            if (it + 1) % 250 == 0 and dataset_name in ["APTOS", "ISIC2018", "OCT2017"]:
-                print('iters: {}/{}, loss:{:.4f}'.format(it + 1, total_iters, np.mean(loss_list)))
+            if dataset_name in ["APTOS", "ISIC2018", "OCT2017"]:
+                if (it + 1) % 250 == 0:
+                    print('iters: {}/{}, loss:{:.4f}'.format(it + 1, total_iters, np.mean(loss_list)))
 
-                modules_list = [model.t.t_t, model.bn.bn, model.s.s1, DFS]
-                auroc, f1, acc = evaluation_mediAD(c, model, test_dataloader, device)
-                print('Auroc: {:.2f}, f1: {:.2f}, acc: {:.2f}'.format(auroc, f1, acc))
-                if max_IRoc < auroc:
-                    max_IRoc = auroc
-                    save_weights(modules_list, ckpt_path, "BEST_I_ROC") if c.is_saved else None
-                model.train_or_eval(type='train')
-            it += 1
-            if it > total_iters:
-                return
-        # if dataset_name in ["APTOS", "ISIC2018", "OCT2017"]:
+                    modules_list = [model.t.t_t, model.bn.bn, model.s.s1, DFS]
+                    auroc, f1, acc = evaluation_mediAD(c, model, test_dataloader, device)
+                    print('Auroc: {:.2f}, f1: {:.2f}, acc: {:.2f}'.format(auroc, f1, acc))
+                    if max_IRoc < auroc:
+                        max_IRoc = auroc
+                        save_weights(modules_list, ckpt_path, "BEST_I_ROC") if c.is_saved else None
+                    model.train_or_eval(type='train')
+                it += 1
+                if it > total_iters:
+                    return
 
         # ------------------------------------eval industrial and video-------------------------------------
 

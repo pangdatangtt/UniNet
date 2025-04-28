@@ -1,1 +1,110 @@
+testing on MVTec AD dataset (separate-class)
+testing class:carpet
+cuda
+Loading weights from ./ckpts\MVTec AD\carpet\BEST_P_PRO.pth
+using UniNet model
+fps: 15.01285865719517 117
+
+testing class:bottle
+cuda
+Loading weights from ./ckpts\MVTec AD\bottle\BEST_P_PRO.pth
+using UniNet model
+fps: 25.9914935846499 83
+
+testing class:hazelnut
+cuda
+Loading weights from ./ckpts\MVTec AD\hazelnut\BEST_P_PRO.pth
+using UniNet model
+fps: 20.161823020393978 110
+
+testing class:leather
+cuda
+Loading weights from ./ckpts\MVTec AD\leather\BEST_P_PRO.pth
+using UniNet model
+fps: 20.54908467751829 124
+
+testing class:cable
+cuda
+Loading weights from ./ckpts\MVTec AD\cable\BEST_P_PRO.pth
+using UniNet model
+fps: 19.34061431680274 150
+
+testing class:capsule
+cuda
+Loading weights from ./ckpts\MVTec AD\capsule\BEST_P_PRO.pth
+using UniNet model
+fps: 11.673435686858296 132
+
+testing class:grid
+cuda
+Loading weights from ./ckpts\MVTec AD\grid\BEST_P_PRO.pth
+using UniNet model
+fps: 23.56542018106916 78
+
+testing class:pill
+cuda
+Loading weights from ./ckpts\MVTec AD\pill\BEST_P_PRO.pth
+using UniNet model
+fps: 25.010693005049067 167
+
+testing class:transistor
+cuda
+Loading weights from ./ckpts\MVTec AD\transistor\BEST_P_PRO.pth
+using UniNet model
+fps: 19.71506695398252 100
+
+testing class:metal_nut
+cuda
+Loading weights from ./ckpts\MVTec AD\metal_nut\BEST_P_PRO.pth
+using UniNet model
+fps: 30.011739762053914 115
+
+testing class:screw
+cuda
+Loading weights from ./ckpts\MVTec AD\screw\BEST_P_PRO.pth
+using UniNet model
+fps: 24.319404455501928 160
+
+testing class:toothbrush
+cuda
+Loading weights from ./ckpts\MVTec AD\toothbrush\BEST_P_PRO.pth
+using UniNet model
+fps: 20.085706851663552 42
+
+testing class:zipper
+cuda
+Loading weights from ./ckpts\MVTec AD\zipper\BEST_P_PRO.pth
+using UniNet model
+fps: 23.909613237201075 151
+
+testing class:tile
+cuda
+Loading weights from ./ckpts\MVTec AD\tile\BEST_P_PRO.pth
+using UniNet model
+fps: 23.65235584147441 117
+
+testing class:wood
+cuda
+Loading weights from ./ckpts\MVTec AD\wood\BEST_P_PRO.pth
+using UniNet model
+fps: 19.4173426148834 307
+
+| object     |   image_auroc |   pixel_auroc |   pixel_aupro |
+|:-----------|--------------:|--------------:|--------------:|
+| carpet     |        100    |         99.1  |         96.9  |
+| bottle     |        100    |         98.9  |         96.5  |
+| hazelnut   |        100    |         99    |         96.9  |
+| leather    |        100    |         99.4  |         98.1  |
+| cable      |        100    |         98.5  |         94.6  |
+| capsule    |        100    |         99.1  |         94.8  |
+| grid       |         99.5  |         99.4  |         98    |
+| pill       |        100    |         98.5  |         97    |
+| transistor |        100    |         97.6  |         94.8  |
+| metal_nut  |        100    |         98.7  |         96.4  |
+| screw      |        100    |         99.6  |         98    |
+| toothbrush |        100    |         99.1  |         93.7  |
+| zipper     |         99.8  |         98.8  |         96    |
+| tile       |         99.2  |         97.5  |         91    |
+| wood       |         99.9  |         99.1  |         98.2  |
+| mean       |         99.89 |         98.82 |         96.06 |
 

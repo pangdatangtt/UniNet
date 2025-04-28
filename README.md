@@ -1,4 +1,20 @@
-# [CVPR2025] UniNet
+<div align="center">
+
+# UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection [CVPR 2025]
+
+_**Shun Wei**,&nbsp; **Jielin Jiang***,&nbsp; **Xiaolong Xu**_
+
+![Last commit](https://img.shields.io/github/last-commit/pangdatangtt/UniNet)&nbsp;
+![Stars](https://img.shields.io/github/stars/pangdatangtt/UniNet)&nbsp;
+![Forks](https://img.shields.io/github/forks/pangdatangtt/UniNet)&nbsp;
+![Visits](https://visitor-badge.laobi.icu/badge?page_id=pangdatangtt.UniNet)&nbsp;
+![PRs](https://img.shields.io/github/issues-pr/pangdatangtt/UniNet?color=green&label=PRs)&nbsp;
+[📄 PDF](https://pangdatangtt.github.io/static/pdfs/UniNet__arXix_.pdf) 
+
+</div>
+
+<div align="center">
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/anomaly-detection-on-mvtec-ad)](https://paperswithcode.com/sota/anomaly-detection-on-mvtec-ad?p=uninet-a-contrastive-learning-guided-unified) 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/anomaly-detection-on-btad)](https://paperswithcode.com/sota/anomaly-detection-on-btad?p=uninet-a-contrastive-learning-guided-unified)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/anomaly-detection-on-mvtec-3d-ad-rgb)](https://paperswithcode.com/sota/anomaly-detection-on-mvtec-3d-ad-rgb?p=uninet-a-contrastive-learning-guided-unified)
@@ -7,15 +23,10 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/anomaly-detection-on-ucsd-ped2)](https://paperswithcode.com/sota/anomaly-detection-on-ucsd-ped2?p=uninet-a-contrastive-learning-guided-unified)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/medical-image-segmentation-on-cvc-colondb)](https://paperswithcode.com/sota/medical-image-segmentation-on-cvc-colondb?p=uninet-a-contrastive-learning-guided-unified)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uninet-a-contrastive-learning-guided-unified/medical-image-segmentation-on-cvc-clinicdb)](https://paperswithcode.com/sota/medical-image-segmentation-on-cvc-clinicdb?p=uninet-a-contrastive-learning-guided-unified)
-
+</div>
 
 ![](figures/UniNet.jpg)
 
-**UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection**
-
-_Shun Wei, Jielin Jiang*, Xiaolong Xu_
-
-[PDF Link](https://pangdatangtt.github.io/static/pdfs/UniNet__arXix_.pdf)
 
 ## 🔔 News
 - 04-27-2025: The checkpoints have been uploaded.

@@ -1,8 +1,8 @@
 <div align="center">
 
-# UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection [CVPR 2025]
-
-_**Shun Wei**,&nbsp; **Jielin Jiang***,&nbsp; **Xiaolong Xu**_
+# UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection
+### _**Shun Wei**,&nbsp; **Jielin Jiang***,&nbsp; **Xiaolong Xu**_
+### [-- CVPR 2025 --](https://cvpr.thecvf.com/)
 
 ![Last commit](https://img.shields.io/github/last-commit/pangdatangtt/UniNet)&nbsp;
 ![Stars](https://img.shields.io/github/stars/pangdatangtt/UniNet)&nbsp;

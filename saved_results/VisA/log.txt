@@ -19,3 +19,92 @@ using UniNet model
 | pcb4       |        100    | 100    | 100    |
 | pipe_fryum |         99    |  99.5  |  98    |
 | mean       |         99.15 |  99.47 |  98.29 |
+
+testing on VisA dataset (separate-class)
+testing class:candle
+cuda
+Loading weights from ./ckpts\VisA\candle\BEST_P_PRO.pth
+using UniNet model
+fps: 30.354941073779234 200
+
+testing class:capsules
+cuda
+Loading weights from ./ckpts\VisA\capsules\BEST_P_PRO.pth
+using UniNet model
+fps: 30.55571825502632 160
+
+testing class:cashew
+cuda
+Loading weights from ./ckpts\VisA\cashew\BEST_P_PRO.pth
+using UniNet model
+fps: 30.001401966759083 150
+
+testing class:chewinggum
+cuda
+Loading weights from ./ckpts\VisA\chewinggum\BEST_P_PRO.pth
+using UniNet model
+fps: 31.355998556861408 150
+
+testing class:fryum
+cuda
+Loading weights from ./ckpts\VisA\fryum\BEST_P_PRO.pth
+using UniNet model
+fps: 31.060839632476828 150
+
+testing class:macaroni1
+cuda
+Loading weights from ./ckpts\VisA\macaroni1\BEST_P_PRO.pth
+using UniNet model
+fps: 31.8425376890879 200
+
+testing class:macaroni2
+cuda
+Loading weights from ./ckpts\VisA\macaroni2\BEST_P_PRO.pth
+using UniNet model
+fps: 31.78845610930374 200
+
+testing class:pcb1
+cuda
+Loading weights from ./ckpts\VisA\pcb1\BEST_P_PRO.pth
+using UniNet model
+fps: 30.533556705710243 200
+
+testing class:pcb2
+cuda
+Loading weights from ./ckpts\VisA\pcb2\BEST_P_PRO.pth
+using UniNet model
+fps: 30.958062283859615 200
+
+testing class:pcb3
+cuda
+Loading weights from ./ckpts\VisA\pcb3\BEST_P_PRO.pth
+using UniNet model
+fps: 32.30598597689963 201
+
+testing class:pcb4
+cuda
+Loading weights from ./ckpts\VisA\pcb4\BEST_P_PRO.pth
+using UniNet model
+fps: 31.281312114438037 201
+
+testing class:pipe_fryum
+cuda
+Loading weights from ./ckpts\VisA\pipe_fryum\BEST_P_PRO.pth
+using UniNet model
+fps: 32.014787103357214 150
+
+| object     |   image_auroc |   pixel_auroc |   pixel_aupro |
+|:-----------|--------------:|--------------:|--------------:|
+| candle     |        100    |         98.9  |         97.4  |
+| capsules   |        100    |         99.7  |         97.9  |
+| cashew     |         97.5  |         96.8  |         93.4  |
+| chewinggum |        100    |         99    |         83.2  |
+| fryum      |        100    |         96    |         91.1  |
+| macaroni1  |        100    |         99.8  |         97.7  |
+| macaroni2  |        100    |         99.6  |         96    |
+| pcb1       |        100    |         99.7  |         96.2  |
+| pcb2       |        100    |         98.6  |         93.4  |
+| pcb3       |        100    |         99.2  |         92.4  |
+| pcb4       |        100    |         99    |         92.5  |
+| pipe_fryum |         99.8  |         99.1  |         96.1  |
+| mean       |         99.8  |         98.8  |         93.9  |

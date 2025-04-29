@@ -45,7 +45,7 @@
 - [x] 🔗 Citation
 - [x] 🙏 Acknowledgements
 - [x] 📜 License
-- [x] 📧 Contact
+- [x] 💬 Contact
 
 
 ## 📖 Introduction
@@ -174,7 +174,9 @@ Then, it would be like:
 ```
 
 ## 🚀 Run Experiments
-### 1. Unsupervised AD
+<details>
+<summary><h3 style="display: inline; margin: 0; color: white;"> 1. Unsupervised AD</h3></summary>
+
 Run the following command for industrial domain, such as MVTec AD dataset:
 ```
 python main.py --setting oc --dataset "MVTec AD"
@@ -199,6 +201,8 @@ Run the following command for _**multiclass**_ anomaly detection, such as VisA d
 ```
 python main.py --setting mc --dataset VisA
 ```
+</div>
+</details>
 
 ### 2. Supervised AD
 Run the following command for medical polyp segmentation, sucha as Kvasir-SEG dataset:
@@ -267,7 +271,7 @@ The code in this repository is licensed under the MIT license.
 
 ## 💬 Contact
 For the questions or collaborations:
-- Email: [pangdatangtt@nuist.edu.cn](pangdatangtt@nuist.edu.cn)
+- Email: [pangdatangtt@nuist.edu.cn](mailto:pangdatangtt@nuist.edu.cn)
 - GitHub issues: [open issue](https://github.com/pangdatangtt/UniNet/issues)
 
 ⭐Please consider giving me a star if you find it useful!!!

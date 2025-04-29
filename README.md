@@ -71,8 +71,9 @@ The public datasets employed in the paper are listed below.
 - Medical domain: [OCT2017](https://data.mendeley.com/datasets/rscbjbr9sj/3), [APTOS](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data), [ISIC2018](https://challenge.isic-archive.com/data/#2018), [Kvasir](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579), [CVC-ColonDB](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579), [CVC-ClinicDB](https://figshare.com/articles/figure/Polyp_DataSet_zip/21221579).
 - Video domain: [Ped2](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html).
 
+<details>
+<summary><strong> 1. MVTec AD</strong></summary>
 
-### 1. MVTec AD
 ```
 |-- mvtec
     |-- bottle
@@ -85,7 +86,11 @@ The public datasets employed in the paper are listed below.
         |-- train
     |-- ...
 ```
-### 2. VisA
+</details>
+
+<details>
+<summary><strong> 2. VisA</strong></summary>
+
 Unzip the file to ```../VisA/.``` Preprocess the dataset to ```../VisA_pytorch/``` in 1-class mode by their official splitting [code](https://github.com/amazon-science/spot-diff). Alternately, 
 you can also preprocess the dataset using this [code](https://github.com/guojiajeremy/ReContrast/blob/master/prepare_data/prepare_visa.py) from ReContrast.
 ```
@@ -101,8 +106,11 @@ you can also preprocess the dataset using this [code](https://github.com/guojiaj
         |-- capsules
         |-- ....
 ```
+</details>
 
-### 3. APTOS
+<details>
+<summary><strong> 3. APTOS</strong></summary>
+
 Creat a new directory ```../APTOS```. Unzip the file to ```../APTOS/original/```. Now, the directory would be like:
 ```
 |-- APTOS
@@ -129,8 +137,12 @@ Then, it woule be like:
         |-- NORMAL
     |-- original
 ```
+</details>
 
-### 4. OCT2017
+
+<details>
+<summary><strong> 4. OCT2017</strong></summary>
+    
 Creat a new directory ```../OCT2017```. Unzip the file, and move everything in ZhangLabData/CellData/OCT to ```../OCT2017/```. The directory should be like:
 ```
 |-- OCT2017
@@ -145,8 +157,11 @@ Creat a new directory ```../OCT2017```. Unzip the file, and move everything in Z
         |-- DRUSEN
         |-- NORMAL
 ```
+</details>
 
-### 5. ISIC2018
+<details>
+<summary><strong> 5. ISIC2018</strong></summary>
+
 Creat a new directory ```../ISIC2018```. After downloading "Training Data","Training Ground Truth", "Validation Data", and "Validation Ground Truth" of Task 3, 
 please unzip them to ```../ISIC2018/original/```. Now, the directory would be like:
 ```
@@ -172,10 +187,11 @@ Then, it would be like:
         |-- NORMAL
     |-- original
 ```
+</details>
 
 ## 🚀 Run Experiments
 <details>
-<summary><h3 style="display: inline; margin: 0; color: white;"> 1. Unsupervised AD</h3></summary>
+<summary><strong> 1. Unsupervised AD</strong></summary>
 
 Run the following command for industrial domain, such as MVTec AD dataset:
 ```
@@ -201,10 +217,11 @@ Run the following command for _**multiclass**_ anomaly detection, such as VisA d
 ```
 python main.py --setting mc --dataset VisA
 ```
-</div>
 </details>
 
-### 2. Supervised AD
+<details>
+<summary><strong> 2. Supervised AD</strong></summary>
+
 Run the following command for medical polyp segmentation, sucha as Kvasir-SEG dataset:
 ```
 python main.py --dataset "Kvasir-SEG"
@@ -219,8 +236,11 @@ Run the following command for industrial domain:
 ```
 python main.py --dataset VAD
 ```
+</details>
 
-### 3. Testing
+<details>
+<summary><strong> 3. Testing</strong></summary>
+    
 With training on your own or saving the weight file we upload, you can test the model using the following command:
 ```
 python main.py --setting oc --dataset "MVTec AD" --load_ckpts
@@ -232,6 +252,7 @@ python main.py --setting mc --dataset VisA --load_ckpts
 python main.py --dataset APTOS --load_ckpts
 ```
 For unsupervised industrial AD, the ''--setting'' must be considered.
+</details>
 
 ## 📂 Results
 ### 1. Unsupervised anomaly detection

@@ -31,9 +31,9 @@
 
 ## 🔔 News
 - 04-27-2025: The checkpoints have been uploaded.
-- 04-26-2025: The code has been released !
+- 04-26-2025: The code has been released 😊!
 - 04-21-2025: The code will be released in recent days !
-- 02-27-2025: Accepted by CVPR2025 !
+- 02-27-2025: Accepted by **CVPR2025** 💥!
 
 
 ## List of TODOs
@@ -45,6 +45,7 @@
 - [x] 🔗 Citation
 - [x] 🙏 Acknowledgements
 - [x] 📜 License
+- [x] 📧 Contact
 
 
 ## 📖 Introduction
@@ -263,3 +264,10 @@ We sincerely appreciate [ReContrast](https://github.com/guojiajeremy/ReContrast)
 
 ## 📜 License
 The code in this repository is licensed under the MIT license.
+
+## 💬 Contact
+For the questions or collaborations:
+- Email: [pangdatangtt@nuist.edu.cn](pangdatangtt@nuist.edu.cn)
+- GitHub issues: [open issue](https://github.com/pangdatangtt/UniNet/issues)
+
+⭐Please consider giving me a star if you find it useful!!!

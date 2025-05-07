@@ -32,10 +32,11 @@ def weighted_decision_mechanism(num, output_list, alpha, beta, out_size=256):
         am_lists[l] = F.interpolate(a_map, size=out_size, mode='bilinear', align_corners=True)[:, 0, :, :]  # B*256*256
 
     anomaly_map = sum(am_lists)
-    anomaly_map_ = anomaly_map - anomaly_map.max(-1, keepdim=True)[0].max(-2, keepdim=True)[0]  # B*256*256
-    anomaly_maps_exp = torch.exp(anomaly_map_)
-    anomaly_score_exp = anomaly_maps_exp.max(-1, keepdim=True)[0].max(-2, keepdim=True)[0] - anomaly_maps_exp
+    # anomaly_map_ = anomaly_map - anomaly_map.max(-1, keepdim=True)[0].max(-2, keepdim=True)[0]  # B*256*256
+    # anomaly_maps_exp = torch.exp(anomaly_map_)
+    # anomaly_score_exp = anomaly_maps_exp.max(-1, keepdim=True)[0].max(-2, keepdim=True)[0] - anomaly_maps_exp
 
+    anomaly_score_exp = anomaly_map
     batch = anomaly_score_exp.shape[0]
     anomaly_score = list()  # anomaly scores for all test samples
     for b in range(batch):
@@ -43,6 +44,9 @@ def weighted_decision_mechanism(num, output_list, alpha, beta, out_size=256):
         assert top_k >= 1 / (out_size * out_size), "weight can not be smaller than 1 / (H * W)!"
 
         single_anomaly_score_exp = anomaly_score_exp[b]
+        single_anomaly_score_exp = torch.tensor(gaussian_filter(
+            single_anomaly_score_exp.detach().cpu().numpy(), sigma=4)
+        )
         assert single_anomaly_score_exp.reshape(1, -1).shape[-1] == out_size * out_size, \
             "something wrong with the last dimension of reshaped map!"
 

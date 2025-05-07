@@ -30,6 +30,7 @@
 
 
 ## 🔔 News
+- 05-07-2025：Some errors have been corrected.
 - 04-27-2025: The checkpoints have been uploaded.
 - 04-26-2025: The code has been released 😊!
 - 04-21-2025: The code will be released in recent days !

@@ -59,8 +59,8 @@ def evaluation_indusAD(c, model, dataloader, device):
 
         # postprocess
         anomaly_score, anomaly_map = weighted_decision_mechanism(weights_cnt, output_list, c.alpha, c.beta)
-        anomaly_score = gaussian_filter(anomaly_score, sigma=4) if is_similarity else \
-            [np.max(gaussian_filter(anomaly_score, sigma=4)[i, :, :, :].numpy()) for i in range(anomaly_score.shape[0])]
+        # anomaly_score = gaussian_filter(anomaly_score, sigma=4) if is_similarity else \
+        #     [np.max(gaussian_filter(anomaly_score, sigma=4)[i, :, :, :].numpy()) for i in range(anomaly_score.shape[0])]
 
         # anomaly_score_add = gaussian_filter(anomaly_score_add, sigma=4)
 
@@ -100,8 +100,8 @@ def evaluation_vad(c, model, dataloader, device):
         if c.weighted_decision_mechanism:
             anomaly_score, _ = weighted_decision_mechanism(weights_cnt, output_list, c.alpha, c.beta)
             # weights_list = [0.03] * weights_cnt
-            anomaly_map = gaussian_filter(anomaly_score, sigma=4)
-            pr_list_sp = anomaly_map
+            # anomaly_map = gaussian_filter(anomaly_score, sigma=4)
+            pr_list_sp = anomaly_score
 
         thresh = return_best_thr(gt_list_sp, pr_list_sp)
         acc = accuracy_score(gt_list_sp, pr_list_sp >= thresh) * 100
@@ -215,7 +215,7 @@ def evaluation_batch(c, model, dataloader, device, _class_=None, reg_calib=False
             anomaly_score, _ = weighted_decision_mechanism(weights_cnt, output_list, c.alpha, c.beta)
 
 
-        anomaly_score = gaussian_filter(anomaly_score, sigma=4)
+        # anomaly_score = gaussian_filter(anomaly_score, sigma=4)
         gt_list_sp = np.asarray(gt_list_sp, dtype=np.bool_)
         # pr_list_sp.extend(sp_score)
 
@@ -257,8 +257,8 @@ def evaluation_mediAD(c, model, dataloader, device, _class_=None, reduction='max
 
         if c.weighted_decision_mechanism:
             anomaly_score, _ = weighted_decision_mechanism(weights_cnt, output_list, c.alpha, c.beta)
-            anomaly_map = gaussian_filter(anomaly_score, sigma=4)
-            pr_list_sp = anomaly_map
+            # anomaly_map = gaussian_filter(anomaly_score, sigma=4)
+            pr_list_sp = anomaly_score
 
         thresh = return_best_thr(gt_list_sp, pr_list_sp)
         acc = accuracy_score(gt_list_sp, pr_list_sp >= thresh) * 100
@@ -419,7 +419,7 @@ def evaluation_video(c, model, test_folder, dataloader, device):
             # list5[videos_list[video_num].split('/')[-1]].append(float(latest_losses['score']))
 
         anomaly_score, _ = weighted_decision_mechanism(weights_cnt, output_list, c.alpha, c.beta)
-        anomaly_map = gaussian_filter(anomaly_score, sigma=4)
+        anomaly_map = anomaly_score#gaussian_filter(anomaly_score, sigma=4)
 
         anomaly_list1 = []
         anomaly_list2 = []

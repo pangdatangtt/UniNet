@@ -212,7 +212,7 @@ def evaluation_batch(c, model, dataloader, device, _class_=None, reg_calib=False
                 # print(output, output.shape)
                 output_list[l].append(output)
 
-            anomaly_score, _ = weighted_decision_mechanism(weights_cnt, output_list, c.alpha, c.beta)
+        anomaly_score, _ = weighted_decision_mechanism(weights_cnt, output_list, c.alpha, c.beta)
 
 
         # anomaly_score = gaussian_filter(anomaly_score, sigma=4)

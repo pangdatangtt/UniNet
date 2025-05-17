@@ -2,7 +2,7 @@ import numpy as np
 import os
 
 from train_unsupervisedAD import train
-from datasets import preprocess_for_3d, unsupervised, supervised, \
+from datasets import preprocess_for_3d, unsupervised, supervised, industrial, medical, video, \
     mvtec_list, btad_list, mvtec3d_list, visa_list
 import argparse
 from utils import setup_seed, get_logger

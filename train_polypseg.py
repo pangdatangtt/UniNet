@@ -83,4 +83,4 @@ def train_polyp(c):
             print("last mean iou:", iou, "best mean iou:", best_iou)
             save_weights(modules_list, ckpt_path, "BEST_DICE") if c.is_saved else None
 
-        return
+    return

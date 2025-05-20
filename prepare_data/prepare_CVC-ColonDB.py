@@ -6,7 +6,7 @@ images_dir = '../medical_segmentation/datasets/CVC-ColonDB/images'
 masks_dir = '../medical_segmentation/datasets/CVC-ColonDB/masks'
 train_image_dir = '../medical_segmentation/datasets/CVC-ColonDB/train/images'
 train_gt_dir = '../medical_segmentation/datasets/CVC-ColonDB/train/masks'
-test_image_dir = '../medical_segmentation/datasets/CVC-ColonDB/test/iamges'
+test_image_dir = '../medical_segmentation/datasets/CVC-ColonDB/test/images'
 test_gt_dir = '../medical_segmentation/datasets/CVC-ColonDB/test/masks'
 
 os.makedirs(train_image_dir, exist_ok=True)

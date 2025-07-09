@@ -30,6 +30,8 @@
 
 
 ## 🔔 News
+- 07-09-2025: This project and code will be further improved after I complete the exam and paper writing, probably in early August. The citation format has been updated !
+              If you find this method useful and want to compare it with yours, feel free to cite !
 - 05-15-2025: Fix some minor errors.
 - 04-27-2025: The checkpoints have been uploaded.
 - 04-26-2025: The code has been released 😊!
@@ -37,13 +39,26 @@
 - 02-27-2025: Accepted by **CVPR2025** 💥!
 
 
+## 🔗 Citation
+Please cite our paper if the method and code help and inspire your project:
+
+```bibtex
+@InProceedings{Wei_2025_CVPR,
+    author    = {Wei, Shun and Jiang, Jielin and Xu, Xiaolong},
+    title     = {UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {9994-10003}
+}
+```
+
 ## List of TODOs
 - [x] 📖 Introduction
 - [x] 🔧 Environments
 - [x] 📊 Data Preparation
 - [x] 🚀 Run Experiments
 - [x] 📂 Results
-- [x] 🔗 Citation
 - [x] 🙏 Acknowledgements
 - [x] 📜 License
 - [x] 💬 Contact
@@ -271,19 +286,6 @@ For unsupervised industrial AD, the ''--setting'' must be considered.
   <img src="figures/loc_results.jpg" width="377" style="display: inline-block;"/>
   <img src="figures/loc_results2.jpg" width="400" style="display: inline-block;"/>
 </div>
-
-
-## 🔗 Citation
-Please cite our paper if the method and code help and inspire your project:
-
-```bibtex
-@inproceedings{wei2025uninet,
-  title={UniNet: A Contrastive Learning-guided Unified Framework with Feature Selection for Anomaly Detection},
-  author={Wei, Shun and Jiang, Jielin and Xu, Xiaolong},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2025},
-}
-```
 
 ## 🙏 Acknowledgements
 We sincerely appreciate [ReContrast](https://github.com/guojiajeremy/ReContrast) for its clear and excellent approach.

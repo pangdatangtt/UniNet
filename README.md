@@ -30,13 +30,13 @@
 
 
 ## 🔔 News
-- 07-09-2025: This project and code will be further improved after I complete the exam and paper writing, probably in early August. The citation format has been updated !
-              If you find this method useful and want to compare it with yours, feel free to cite !
-- 05-15-2025: Fix some minor errors.
-- 04-27-2025: The checkpoints have been uploaded.
-- 04-26-2025: The code has been released 😊!
-- 04-21-2025: The code will be released in recent days !
-- 02-27-2025: Accepted by **CVPR2025** 💥!
+- _**07-09-2025:**_ This project and code will be further improved after I complete the exam and paper writing, probably in early August. The citation format has been updated!
+              If you find this method useful and want to compare it with yours, feel free to cite!
+- _**05-15-2025:**_ Fix some minor errors.
+- _**04-27-2025:**_ The checkpoints have been uploaded.
+- _**04-26-2025:**_ The code has been released 😊!
+- _**04-21-2025:**_ The code will be released in recent days!
+- _**02-27-2025:**_ Accepted by **CVPR2025** 💥!
 
 
 ## 🔗 Citation
